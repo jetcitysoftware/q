@@ -15,7 +15,7 @@ This example starts a Q server with 2 message queues (database and network) and 
 
 **server.js**
 ```javascript
-const Q = require('@nmq/q/server`);
+const Q = require('@nmq/q/server');
 Q.start();
 
 const db = new Q('database');
