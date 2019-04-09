@@ -1,16 +1,23 @@
 {
-  "name": "lib",
-  "version": "1.0.0",
+  "name": "@nmq/q",
+  "version": "1.0.1",
   "description": "",
-  "main": "client.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "socket.io": "^2.2.0",
     "socket.io-client": "^2.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jetcitysoftware/q.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jetcitysoftware/q/issues"
+  },
+  "homepage": "https://github.com/jetcitysoftware/q#readme"
 }

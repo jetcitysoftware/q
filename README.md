@@ -15,7 +15,7 @@ This example starts a Q server with 2 message queues (database and network) and 
 
 **server.js**
 ```javascript
-const Q = require('@nmq/server`);
+const Q = require('@nmq/q/server`);
 Q.start();
 
 const db = new Q('database');
@@ -47,7 +47,7 @@ Here are a few simple examples
 This application will connect to the Queue server created above and respond to any `delete` or `create` events in the `database` queue.
 
 ```javascript
-const Q = require('@nmq/client');
+const Q = require('@nmq/q/client');
 
 const db = new Q('database');
 
@@ -65,7 +65,7 @@ db.subscribe('create', (payload) => {
 This application will connect to the Queue server created above and respond to the `attack` event in the `network` queue.
 
 ```javascript
-const Q = require('@nmq/client');
+const Q = require('@nmq/q/client');
 
 const network = new Q('network');
 
@@ -88,7 +88,7 @@ As these events fire, the server will "hear" them, reformat them, and then broad
  * Payload - Can be of any type (string, array, object, boolean)
 
 ```javascript
-const Q = require('@nmq/client');
+const Q = require('@nmq/q/client');
 
 Q.publish('database', 'delete', {id:77});
 Q.publish('database', 'create', {id:99,name:'John'});
