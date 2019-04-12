@@ -2,7 +2,7 @@
 
 const io = require('socket.io-client');
 
-const SERVER = process.env.Q_SERVER || 'http://localhost:3333';
+const SERVER = process.env.Q_SERVER || process.env.REACT_APP_Q_SERVER || 'http://localhost:3333';
 
 /** Class representing a subscriber instance to the Queue. */
 class Q {
