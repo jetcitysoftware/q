@@ -34,7 +34,7 @@ Create any number of clients to connect to your queue server. Typically, your se
 
 Clients can connect to multiple queues and any number of events.
 
-1. Create an environment variable called `QUEUE_SERVER` that contains the full URL and PORT of your running queue server
+1. Create an environment variable called `Q_SERVER` that contains the full URL and PORT of your running queue server
 1. Create  new reference to any valid Queue
 1. Subscribe to any valid events in that Queue
 1. Perform any actions when those events occur
