@@ -61,7 +61,7 @@ class Queue {
    * be connected directly to any named queue. They can just fire 'publish' at their core socket
    */
   static start() {
-    const PORT = process.env.PORT || 3333;
+    const PORT = process.env.PORT || process.env.port || 3333;
     Queue.io = new Server(PORT);
     Queue.io.on('connection', socket => {
       console.log('connected', socket.id);
